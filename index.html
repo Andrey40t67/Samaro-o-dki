@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Самородки Jewellery — авторские ювелирные изделия ручной работы из уникальных самородков, драгоценных камней и благородных металлов.">
+  <title>Самородки Jewellery — ювелирный дом</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="nav">
+      <div class="logo">Самородки Jewellery</div>
+      <div class="nav__links">
+        <a href="#collections">Коллекции</a>
+        <a href="#atelier">Ателье</a>
+        <a href="#craft">Ремесло</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#partners">Магазины</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <button class="nav__btn" data-modal="contactModal">Связаться</button>
+    </nav>
+    <section class="hero parallax" data-parallax="scroll">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__subtitle">Авторское ювелирное искусство</span>
+        <h1 class="hero__title">Самородки, рождённые в недрах. Украшения, созданные сердцем.</h1>
+        <p class="hero__text">Мы превращаем природные самородки, драгоценные камни и благородные металлы в уникальные произведения. Каждое изделие имеет свою историю, характер и душу.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#collections">Смотреть коллекции</a>
+          <button class="btn btn--ghost" data-modal="contactModal">Консультация ювелира</button>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Листайте вниз</span>
+        <div class="mouse"></div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section highlights" id="highlights">
+      <div class="container">
+        <div class="highlight__grid">
+          <article class="highlight-card">
+            <h3>Уникальные самородки</h3>
+            <p>Мы ищем золото и редкие камни на Урале, в Якутии и на Колыме, раскрывая их природный характер в украшениях.</p>
+          </article>
+          <article class="highlight-card">
+            <h3>Высокое ювелирное мастерство</h3>
+            <p>Индивидуальный подход, CAD-моделирование, ручная доводка и авторские техники гравировки.</p>
+          </article>
+          <article class="highlight-card">
+            <h3>Персональные истории</h3>
+            <p>Создаём украшения, которые отражают важные моменты жизни: от помолвки до семейных традиций.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collections parallax" id="collections">
+      <div class="parallax__bg"></div>
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Коллекции</span>
+          <h2>Ювелирные истории Самородков</h2>
+          <p>Вдохновлённые природой, легендами и силой металла коллекции наполнены энергией и современным стилем.</p>
+        </header>
+        <div class="collections__grid">
+          <article class="collection-card">
+            <div class="collection-card__media"></div>
+            <div class="collection-card__content">
+              <h3>Коллекция «Сияние Севера»</h3>
+              <p>Холодные переливы белого золота и бриллиантов, отражающие северное сияние над Якутией.</p>
+              <ul>
+                <li>Браслеты-трансформеры</li>
+                <li>Многослойные подвески</li>
+                <li>Кольца с гравировкой</li>
+              </ul>
+            </div>
+          </article>
+          <article class="collection-card">
+            <div class="collection-card__media collection-card__media--gold"></div>
+            <div class="collection-card__content">
+              <h3>Коллекция «Живое золото»</h3>
+              <p>Крупные самородки, подчеркнутые органическими формами и мягкими линиями, обрамленные в розовое золото.</p>
+              <ul>
+                <li>Авторские колье</li>
+                <li>Моно-серьги</li>
+                <li>Элегантные броши</li>
+              </ul>
+            </div>
+          </article>
+          <article class="collection-card">
+            <div class="collection-card__media collection-card__media--dark"></div>
+            <div class="collection-card__content">
+              <h3>Коллекция «Графит»</h3>
+              <p>Антрацитовые алмазы и оникс в сочетании с чёрным родием — минималистичный взгляд на классическую роскошь.</p>
+              <ul>
+                <li>Запонки и аксессуары</li>
+                <li>Сдержанные кольца</li>
+                <li>Геометрические серьги</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section atelier" id="atelier">
+      <div class="container">
+        <div class="split">
+          <div class="split__media floating"></div>
+          <div class="split__content">
+            <span class="section__eyebrow">Ателье</span>
+            <h2>Связь традиций и технологий</h2>
+            <p>Наше ателье находится в самом сердце Самары. Здесь сочетаются старинные техники и современное оборудование. Мы используем 3D-сканирование, лазерную пайку и ручную огранку, чтобы каждый элемент был совершенен.</p>
+            <ul class="list-check">
+              <li>Индивидуальные эскизы и цифровые визуализации</li>
+              <li>Уникальная упаковка и паспорта изделий</li>
+              <li>Сервисное обслуживание и реставрация</li>
+            </ul>
+            <div class="split__cta">
+              <button class="btn btn--primary" data-modal="contactModal">Запланировать визит</button>
+              <a class="btn btn--ghost" href="#craft">Узнать о ремесле</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section craft parallax" id="craft">
+      <div class="parallax__bg parallax__bg--craft"></div>
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Мастерство</span>
+          <h2>Ювелирное ремесло ручной работы</h2>
+          <p>Каждое украшение проходит более 25 этапов от отбора самородка до финальной полировки. Мы сохраняем природную форму металла, подчеркивая его естественный блеск.</p>
+        </header>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span class="timeline__step">01</span>
+            <h3>Отбор самородка</h3>
+            <p>Мы выбираем камни с уникальным характером и структурой. Их форма становится основой композиции.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__step">02</span>
+            <h3>Эскиз и 3D-модель</h3>
+            <p>Рисуем эскизы вручную, затем создаём точную цифровую модель для идеальной посадки и баланса.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__step">03</span>
+            <h3>Литьё и обработка</h3>
+            <p>Используем благородные металлы 585, 750, 950 пробы. После литья каждую деталь шлифуем и гравируем вручную.</p>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__step">04</span>
+            <h3>Закрепка и сияние</h3>
+            <p>Закрепляем камни только вручную, проверяя каждую грань. Финальный штрих — авторский блеск и фирменное клеймо.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Галерея</span>
+          <h2>Современная эстетика и характер самородков</h2>
+          <p>Динамичные формы, текстуры и свет. Вдохновитесь нашей подборкой изделий и представьте свою историю.</p>
+        </header>
+        <div class="gallery__mosaic">
+          <div class="gallery__item gallery__item--large"></div>
+          <div class="gallery__item gallery__item--tall"></div>
+          <div class="gallery__item gallery__item--wide"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item"></div>
+          <div class="gallery__item gallery__item--dark"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Отзывы</span>
+          <h2>Нас выбирают за эмоции и доверие</h2>
+          <p>Реальные истории наших клиентов, которые почувствовали энергию самородков.</p>
+        </header>
+        <div class="reviews__slider">
+          <article class="review-card">
+            <p>«Заказывали обручальные кольца с алмазными включениями. Ребята учли все пожелания, сделали идеальную посадку и эффектную гравировку внутри. Невероятно красивые изделия!»</p>
+            <span class="review-card__author">Анна и Михаил</span>
+          </article>
+          <article class="review-card">
+            <p>«Коллекция “Графит” стала моим фирменным стилем. Благодарю за смелые решения, индивидуальный подход и сервис мирового уровня.»</p>
+            <span class="review-card__author">Игорь Кравцов</span>
+          </article>
+          <article class="review-card">
+            <p>«Получила колье с самородком золота. Каждая деталь продумана, упаковка и сертификат восхитительны. Теперь жду новую коллекцию!»</p>
+            <span class="review-card__author">Светлана Ж.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners parallax" id="partners">
+      <div class="parallax__bg parallax__bg--partners"></div>
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Где купить</span>
+          <h2>Самородки Jewellery на маркетплейсах</h2>
+          <p>Наши коллекции представлены на ведущих площадках России. Выбирайте удобный способ покупки.</p>
+        </header>
+        <div class="partners__grid">
+          <a class="partner-card" href="https://www.wildberries.ru/catalog/0/search.aspx?search=самородки%20ювелирные" target="_blank" rel="noopener">
+            <span>Wildberries</span>
+            <p>Эксклюзивные линейки и лимитированные серии</p>
+          </a>
+          <a class="partner-card" href="https://www.ozon.ru/category/yuvelirnye-izdeliya-7145/?text=самородки%20украшения" target="_blank" rel="noopener">
+            <span>Ozon</span>
+            <p>Подборки на любой случай и подарочные наборы</p>
+          </a>
+          <a class="partner-card" href="https://www.gold585.ru/" target="_blank" rel="noopener">
+            <span>585 Gold</span>
+            <p>Сотрудничество с федеральной сетью ювелирных салонов</p>
+          </a>
+          <a class="partner-card" href="https://sunlight.net/catalog/" target="_blank" rel="noopener">
+            <span>Sunlight</span>
+            <p>Специальные коллекции и эксклюзивные релизы</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section manifesto" id="manifesto">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Миссия</span>
+          <h2>Украшения, в которых слышно дыхание земли</h2>
+          <p>Мы верим, что истинная роскошь — в искренних эмоциях, честном происхождении материалов и уважении к природе.</p>
+        </header>
+        <div class="manifesto__grid">
+          <article>
+            <h3>Этика и прозрачность</h3>
+            <p>Мы используем только сертифицированные металлы и камни, поддерживаем ответственные шахты и публикуем происхождение каждого самородка.</p>
+          </article>
+          <article>
+            <h3>Экосознательный подход</h3>
+            <p>Внедряем переработку материалов, экономию воды и повторное использование упаковки. Создаём украшения, которые служат десятилетиями.</p>
+          </article>
+          <article>
+            <h3>Технологии будущего</h3>
+            <p>Комбинируем искусственный интеллект, ручной труд и ремесленные традиции. Так рождается дизайн, который опережает время.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta parallax" id="cta">
+      <div class="parallax__bg parallax__bg--cta"></div>
+      <div class="container cta__content">
+        <h2>Создадим украшение вашей мечты</h2>
+        <p>Опишите историю, эмоцию и событие — и мы воплотим их в драгоценном образе. Индивидуальные консультации, видео-презентации и примерки доступны онлайн.</p>
+        <div class="cta__actions">
+          <button class="btn btn--primary" data-modal="contactModal">Получить предложение</button>
+          <a class="btn btn--ghost" href="#contact">Контактная информация</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__card">
+            <span class="section__eyebrow">Связаться</span>
+            <h2>Всегда на связи</h2>
+            <p>Напишите нам, чтобы подобрать украшение, обсудить индивидуальный заказ или получить презентацию коллекции.</p>
+            <ul class="contact__list">
+              <li>
+                <span>Почта</span>
+                <a href="mailto:weekend2@yandex.com">weekend2@yandex.com</a>
+              </li>
+              <li>
+                <span>WhatsApp</span>
+                <a href="https://wa.me/79269564883" target="_blank" rel="noopener">+7 (926) 956-48-83</a>
+              </li>
+              <li>
+                <span>Телеграм</span>
+                <a href="https://t.me/share/url?url=https://samorodki-jewellery.ru&text=Хочу%20заказать%20украшение" target="_blank" rel="noopener">Написать</a>
+              </li>
+            </ul>
+            <div class="contact__socials">
+              <a href="https://vk.com" target="_blank" rel="noopener">VK</a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram*</a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a>
+            </div>
+          </div>
+          <form class="contact__form" autocomplete="on">
+            <h3>Оставить заявку</h3>
+            <div class="form__group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Имя" required>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form__group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон">
+            </div>
+            <div class="form__group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" placeholder="Опишите пожелания"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Отправить</button>
+            <p class="form__note">Отправляя форму, вы соглашаетесь с политикой конфиденциальности.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div>
+        <span class="logo">Самородки Jewellery</span>
+        <p>© 2024. Ювелирный дом Samorodki. Искусство, рождённое природой России.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#collections">Коллекции</a>
+        <a href="#atelier">Ателье</a>
+        <a href="#partners">Магазины</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="btn btn--ghost" data-modal="contactModal">Связаться</button>
+    </div>
+  </footer>
+
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal__overlay" data-close="true"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close="true" aria-label="Закрыть">&times;</button>
+      <h3 id="modalTitle">Свяжитесь с Самородки Jewellery</h3>
+      <p>Напишите на <a href="mailto:weekend2@yandex.com">weekend2@yandex.com</a> или в WhatsApp <a href="https://wa.me/79269564883" target="_blank" rel="noopener">+7 (926) 956-48-83</a>. Мы ответим в течение часа.</p>
+      <div class="modal__actions">
+        <a class="btn btn--primary" href="mailto:weekend2@yandex.com">Написать письмо</a>
+        <a class="btn btn--ghost" href="https://wa.me/79269564883" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
